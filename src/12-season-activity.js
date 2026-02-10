@@ -67,5 +67,7 @@ export function getSeasonActivity(month, temperature) {
         return { season: "Autumn", activity: "reading at a cafe" }
       }
     }
+
+  
   }
 }
