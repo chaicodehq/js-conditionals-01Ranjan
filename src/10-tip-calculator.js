@@ -41,32 +41,32 @@ export function calculateTip(billAmount, serviceRating) {
     }
     if (serviceRating == 1) {
       obj.tipPercentage = 5;
-      obj.tipAmount =  Number((billAmount * (0.05)).toFixed(2))
+      obj.tipAmount =  Number((billAmount * (0.05)).toFixed(2));
       obj.totalAmount = Number((billAmount * (0.05) + billAmount).toFixed(2));
       return obj;
     }
     else if (serviceRating == 2) {
       obj.tipPercentage = 10;
-      obj.tipAmount =  Number((billAmount * (0.1)).toFixed(2))
+      obj.tipAmount =  Number((billAmount * (0.1)).toFixed(2));
       obj.totalAmount =  Number((billAmount * (0.1) + billAmount).toFixed(2));
-      return obj
+      return obj;
     }
     else if (serviceRating == 3) {
       obj.tipPercentage = 15;
-      obj.tipAmount =  Number((billAmount * (0.15)).toFixed(2))
+      obj.tipAmount =  Number((billAmount * (0.15)).toFixed(2));
       obj.totalAmount =  Number((billAmount * (0.15) + billAmount).toFixed(2));
       return obj;
     }
     else if (serviceRating == 4) {
       obj.tipPercentage = 20;
-      obj.tipAmount =  Number((billAmount * (0.2)).toFixed(2))
+      obj.tipAmount =  Number((billAmount * (0.2)).toFixed(2));
       obj.totalAmount =  Number((billAmount * (0.2) + billAmount).toFixed(2));
       return obj;
     }
     else if (serviceRating == 5) {
       obj.tipPercentage = 25;
-      obj.tipAmount = Number((billAmount * (0.25)).toFixed(2))
-       obj.totalAmount =  Number((billAmount * (0.25) + billAmount).toFixed(2));
+      obj.tipAmount = Number((billAmount * (0.25)).toFixed(2));
+      obj.totalAmount =  Number((billAmount * (0.25) + billAmount).toFixed(2));
       return obj;
     }
   }
